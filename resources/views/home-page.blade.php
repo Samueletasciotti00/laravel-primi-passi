@@ -8,16 +8,23 @@
 <body>
     
     <!-- Print Hello Word -->
-    <h1 style="text-align: center; margin: 40px;"> {{ $titol }} </h1>
+    <h1 style=""> {{ $titol }} </h1>
 
     <!-- Print delle info -->
-    <h2 style="text-align: center; margin: 40px;">Lista info</h2>
+    <h2 style="">Lista info</h2>
 
     <!-- List -->
-    <ul>
+
+    <!-- IF/Else Condition -->
+    @if (isset($info))
+    <ul style="list-style: none; margin: 40px;">
         @foreach ($info as $inf)
-            <li> {{ inf }} </li>
+            <li> {{ $inf }} </li>
         @endforeach
     </ul>
+    @else
+    <h3>Non ci sono info</h3>
+    @endif
+    
 </body>
 </html>
