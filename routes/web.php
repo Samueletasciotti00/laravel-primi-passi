@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    
-    return view('home-page');
+    // Dichiarazione Variabile titolo
+    $titol = 'Hello Word';
+    return view('home-page', compact('titol'));
 });

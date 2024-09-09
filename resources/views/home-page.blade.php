@@ -8,6 +8,6 @@
 <body>
     
     <!-- Print Hello Word -->
-    <h1 style="text-align: center; margin: 40px;">Hello Word</h1>
+    <h1 style="text-align: center; margin: 40px;"> {{ $titol }} </h1>
 </body>
 </html>
